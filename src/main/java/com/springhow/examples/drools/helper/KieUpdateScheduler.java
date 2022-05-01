@@ -25,7 +25,7 @@ public class KieUpdateScheduler {
 
 
 
-    @Scheduled(fixedDelay = 2*60*1000, initialDelay = 1000)
+    @Scheduled(fixedDelay = 30*1000, initialDelay = 1000)
     public void updateSecondaryKieContainer(){
         System.out.println("updateSecondaryKieContainer"+ (new Date()));
         KieContainer defaultKieContainer = getDefaultKieContainer(new File("/Users/micro/IdeaProjects/drools-demo/src/main/resources/discount_secondary.drl"));
