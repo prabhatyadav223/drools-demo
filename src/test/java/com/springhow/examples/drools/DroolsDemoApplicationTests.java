@@ -8,6 +8,7 @@ class DroolsDemoApplicationTests {
 
     @Test
     void contextLoads() {
+        
     }
 
 }
