@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/controller/duplicate")
+@RestController("/controller2")
 public class DecisionControllerDuplicate {
 
     @Autowired
     private CustomKieContainer customKieContainer;
 
-    @PostMapping("/discount")
-    private OrderRequest getDiscountPercent(@RequestBody OrderRequest orderRequest) {
+    @PostMapping("/duplicate/discount")
+    private OrderRequest getDiscountPercentDuplicate(@RequestBody OrderRequest orderRequest) {
         KieSession kieSession = customKieContainer.getKieContainer(KieContainerType.SECONDARY).newKieSession();
         kieSession.insert(orderRequest);
         kieSession.fireAllRules();
@@ -24,8 +24,8 @@ public class DecisionControllerDuplicate {
         return orderRequest;
     }
 
-    @PostMapping("/discount1")
-    private OrderRequest getDiscountPercent1(@RequestBody OrderRequest orderRequest) {
+    @PostMapping("/duplicate/discount1")
+    private OrderRequest getDiscountPercentDuplicate1(@RequestBody OrderRequest orderRequest) {
         KieSession kieSession = customKieContainer.getKieContainer(KieContainerType.SECONDARY).newKieSession();
         kieSession.insert(orderRequest);
         kieSession.fireAllRules();
@@ -33,8 +33,8 @@ public class DecisionControllerDuplicate {
         return orderRequest;
     }
 
-    @PostMapping("/discount2")
-    private OrderRequest getDiscountPercent2(@RequestBody OrderRequest orderRequest) {
+    @PostMapping("/duplicate/discount2")
+    private OrderRequest getDiscountPercentDuplicate2(@RequestBody OrderRequest orderRequest) {
         KieSession kieSession = customKieContainer.getKieContainer(KieContainerType.SECONDARY).newKieSession();
         kieSession.insert(orderRequest);
         kieSession.fireAllRules();
@@ -42,12 +42,39 @@ public class DecisionControllerDuplicate {
         return orderRequest;
     }
 
-    @PostMapping("/discount3")
-    private OrderRequest getDiscountPercent3(@RequestBody OrderRequest orderRequest) {
+    @PostMapping("/duplicate/discount3")
+    private OrderRequest getDiscountPercentDuplicate3(@RequestBody OrderRequest orderRequest) {
         KieSession kieSession = customKieContainer.getKieContainer(KieContainerType.SECONDARY).newKieSession();
         kieSession.insert(orderRequest);
         kieSession.fireAllRules();
         kieSession.dispose();
         return orderRequest;
+    }
+
+    private void test(){
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
     }
 }

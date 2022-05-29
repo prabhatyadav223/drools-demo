@@ -51,4 +51,31 @@ public class DecisionController {
         kieSession.dispose();
         return orderRequest;
     }
+
+    private void test(){
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+        System.out.printf("demo");
+    }
 }

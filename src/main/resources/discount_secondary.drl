@@ -11,5 +11,5 @@ rule "Discount for CARD payment below 10000"
     when
         orderObject : OrderRequest( paymentType=="CARD" && totalPrice > 5000 && totalPrice < 10000 );
     then
-        orderObject.setDiscount(5000);
+        orderObject.setDiscount(50000);
 end;
